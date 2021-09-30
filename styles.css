@@ -32,7 +32,7 @@ html {
 
 .container {
 	width: 500px;
-	height: 600px;
+	height: 800px;
 	background-color: bisque;
 	border-radius: 5px;
 	padding: 25px;
@@ -43,8 +43,9 @@ html {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
-
+/* Header Section */
 .header {
 	display: flex;
 	align-items: flex-start;
@@ -66,7 +67,7 @@ html {
 	outline: unset;
 	cursor: pointer;
 }
-
+/* Form Section */
 .add {
 	padding: 16px;
 }
@@ -101,4 +102,29 @@ html {
 	background: unset;
 	border: unset;
 	outline: unset;
+}
+/* Todos Section */
+.todos {
+	display: flex;
+	flex-direction: column;
+}
+
+.todo {
+	position: relative;
+
+	flex: 1 0 auto;
+	text-align: center;
+
+	min-height: 34px;
+	margin: 16px 0 0;
+	font-family: "Yellowtail", sans-serif;
+	font-size: 2.4rem;
+
+	border-bottom: 1px solid var(--red--btn);
+}
+
+.todo-text {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
 }
